@@ -1,0 +1,96 @@
+/* Import Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+  background: linear-gradient(#f9d976, #f39f86);
+  /*fill the screen with the gradient and no scroll */
+  min-height: 100vh;
+  /* no scroll */
+  overflow: hidden;
+}
+
+.container {
+  width: 325px;
+  height: auto;
+
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  border-style: solid;
+  border-width: 1.4px;
+  background: #9dd2ea;
+  background: linear-gradient(#9dd2ea, #8bceec);
+  border-radius: 20px;
+  box-shadow: 0px 0px #009de4, 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.screen {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: transparent;
+  height: 90px;
+  color: rgb(238, 236, 236);
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+}
+
+button {
+  border-radius: 20px;
+
+  height: 60px;
+
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+  color: rgba(73, 72, 72, 0.973);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #9c89f6;
+  box-shadow: 0px 4px #6b54d3;
+  color: white;
+}
+
+button:active {
+  background-color: rgba(180, 180, 180, 0.4);
+}
+
+.all-clear {
+  background: #f68991;
+}
+
+.all-clear:hover {
+  background: #f68991;
+  box-shadow: 0px 2px #d3545d;
+}
+
+.equal-sign {
+  height: 100%;
+  grid-area: 2/4/6/5;
+  background-color: rgba(0, 255, 0, 0.4);
+}
+
+.equal-sign:hover {
+  background-color: rgba(0, 255, 0, 0.4);
+  box-shadow: rgba(0, 255, 0, 0.4);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
